@@ -1,4 +1,5 @@
 site_name: Low Mind - Документация
+docs_dir: docs
 
 theme:
   name: material
