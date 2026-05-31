@@ -1,0 +1,44 @@
+site_name: Low Mind - Документация
+
+theme:
+  name: material
+  language: ru
+  palette:
+    - scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Светлая тема
+    - scheme: default
+      primary: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: Темная тема
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+nav:
+  - Главная: index.md
+  - Геймдизайн: gdd.md
+  - Код:
+      - Контроллер: code/player.md
+      - Враги: code/enemies.md
+  - Ассеты: assets.md
+  - Чейнджлог: changelog.md
